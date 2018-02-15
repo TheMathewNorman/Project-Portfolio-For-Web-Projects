@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+	font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+	overflow-x: hidden;
+	
+}
+#project-quicklinks {
+	width: 100%;
+	padding: 10px;
+	background-color: rgba(200,200,200,0.8);
+	text-align: center;
+}
+#project-quicklinks a:hover {
+	font-size: 1.1em;
+}
+#heading {
+	text-align: center;
+	padding: 10;
+	height: 100vh;
+	width: 100%;
+	background:
+		linear-gradient(280deg, rgba(116,160,62,1), rgba(64,64,64,.2) 80.71%),
+		linear-gradient(180deg, rgba(116,160,62,1), rgba(64,64,64,.2) 80.71%),
+		linear-gradient(90deg, rgba(116,160,62,1), rgba(64,64,64,.2) 80.71%),
+		linear-gradient(0deg, rgba(116,160,62,1), rgba(64,64,64,.2) 80.71%);
+}
+#heading-content {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	color: white;
+	text-shadow: 2px 2px 0 #000,
+    -2px 2px 0 #000,
+    2px -2px 0 #000,
+    -1px -2px 0 #000,
+    0px 2px 0 #000,
+    0px -2px 0 #000,
+    -1px 0px 0 #000,
+    1px 0px 0 #000,
+    4px 4px 0 #000,
+    -4px 4px 0 #000,
+    4px -4px 0 #000,
+    -4px -4px 0 #000,
+    0px 4px 0 #000,
+    0px -2px 0 #000,
+    -4px 4px 0 #000,
+    4px 0px 0 #000,
+    2px 4px 0 #000,
+    -2px 4px 0 #000,
+    2px -4px 0 #000,
+    -2px -4px 0 #000,
+    4px 2px 0 #000,
+    -4px 2px 0 #000,
+    4px -2px 0 #000,
+    -4px -2px 0 #000;
+}
+#heading-content h1 {
+	font-size: 10em;
+}
+.projects-wrapper {
+	display: grid;
+	grid-template-columns: 30% 30% 30%;
+	padding: 10px;
+	width: 100%;
+	grid-gap: 5%;
+	margin: 0 auto;
+}
+.project {
+	background-color: #DDD;
+	border: 1px solid black;
+	border-radius: 5px;
+	height: 200px;
+	margin-bottom: 5%;
+}
+.project:hover {
+	font-size: 1.2em;
+	background-color: #EEE;
+}
+.project-title {
+	text-align: center;
+	padding: 5px;
+	font-size: 1.5em;
+	font-weight: 400;
+	
+	background: linear-gradient(to bottom, rgb(116,160,62), rgb(96,140,42));
+}
+.project-title a:link, .project-title a:visited, .project-title a:hover, .project-title a:active {
+	color: #EEE;
+}
+.project:hover .project-title {
+	background-color: lightgray;
+}
+.project-desc {
+	text-align: center;
+    padding: 5px;
+}
+.project:hover .project-desc {
+	overflow-y: auto;
+}
+#footer {
+	text-align: center;
+	font-size: 1em;
+	background: rgba(255,255,255,.8);
+	padding: 10px;
+	width: 90%;
+	height: 5%;
+	border-radius: 25px;
+	margin: auto;
+	margin-bottom: 20px;
+
+	background:
+		linear-gradient(280deg, rgba(116,160,62,1), rgba(64,64,64,.2) 80.71%),
+		linear-gradient(180deg, rgba(116,160,62,1), rgba(64,64,64,.2) 80.71%),
+		linear-gradient(90deg, rgba(116,160,62,1), rgba(64,64,64,.2) 80.71%),
+		linear-gradient(0deg, rgba(116,160,62,1), rgba(64,64,64,.2) 80.71%);
+}
+#footer-content {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#footer-content a {
+	text-decoration: none;
+	color: white;	
+}
