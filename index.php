@@ -1,5 +1,5 @@
 <html>
-<head><title>Home - Mat's MMS Projects</title>
+<head><title>Home - Mathew's Projects</title>
 
 <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
