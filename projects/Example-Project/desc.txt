@@ -1,0 +1,2 @@
+<p>This is an example description file.</p>
+<p>It's a text file called "desc.txt", create and place it in the root of your project and enter a text description (it supports HTML!)</p>

@@ -12,22 +12,6 @@
 	include "php/project-discovery.php";
 ?>
 
-<?php
-	/*
-	// LOAD IN PROJECT DATA
-	$projectData = array();
-
-	$dirs = array_filter(glob('projects/*'), 'is_dir');
-	foreach ($dirs as $dir)	{
-		$descFile = fopen($dir . "/desc.txt", "r") or die("There is no description file for " . $dir);
-
-		$project = array();
-		array_push($project, $dir);
-		array_push($project, fread($descFile, filesize($dir."/desc.txt")));
-		array_push($projectData, $project);
-	}
-	*/
-?>
 <div id="project-quicklinks">
 	<?php
 		echo '| ';
@@ -39,28 +23,30 @@
 
 <div id="heading">
 	<div id="heading-content">
-		<h1>Mat's MMS<br>Projects</h1>
+		<h1>Mathew's Projects</h1>
 	</div>
 </div>
 
 <br />
 
 <div class="projects-wrapper">
+
 <?php
-foreach ($projects as $projectName=>$projectDescription)	{		
+	foreach ($projects as $projectName=>$projectDescription)	{		
 ?>
-<div class="project" id="<?php echo $projectName; ?>">
-	<div class="project-title"><?php echo '<a href="/'.$projectLocation.$projectName.'">'.str_replace('-',' ',$projectName).'</a>'; ?></div>
-	<div class="project-desc">
-		<?php echo $projectDescription; ?>
-	</div>
-</div> 
+	<div class="project" id="<?php echo $projectName; ?>">
+		<div class="project-title"><?php echo '<a href="/'.$projectLocation.$projectName.'">'.str_replace('-',' ',$projectName).'</a>'; ?></div>
+		<div class="project-desc">
+			<?php echo $projectDescription; ?>
+		</div>
+	</div> 
 <?php
-}
+	}
 ?>
+
 </div>
 <div id="footer">
-	<div id="footer-content">Each project contains code written by <a href="http://matnorman.com/">Mathew Norman</a> for <a href="https://melbournemontessori.vic.edu.au/">Melbourne Montessori School</a></div>
+	<div id="footer-content">This project display page was written by <a href="http://matnorman.com/">Mathew Norman</a>.</div>
 </div>
 </body>
 </html>
